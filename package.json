@@ -1,0 +1,46 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "description": "jest test",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --collectCoverage",
+    "eslint": "eslint",
+    "prettier": "prettier"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/coverage/**"
+    ],
+    "coverageThreshold": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100
+    }
+  },
+  "keywords": [
+    "jest",
+    "test",
+    "jsaqa"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stjushenka/jsaqa-code.git#main"
+  },
+  "author": "zhuravleva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stjushenka/jsaqa-code/issues"
+  },
+  "homepage": "https://github.com/Stjushenka/jsaqa-code/tree/main#readme",
+  "devDependencies": {
+    "jest": "^29.0.3",
+    "playwright": "^1.25.2"
+  }
+}
